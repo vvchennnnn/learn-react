@@ -9,8 +9,16 @@ import NavbarItem, { Link } from './components/NavbarItem';
 
 // 代码只写一次，被调用n次，被阅览n+1次 
 
-const Header = () => (
+const Header = ({
+    onPageChange,
+    page
+}) => (
     <>
+        <NavbarItem
+            onClick = {() => onPageChange(navbarItem.key)}
+        >
+            {navbarItem.value}
+        </NavbarItem>
     </>
 );
 
