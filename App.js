@@ -4,14 +4,18 @@ import Page from './app/Page';
 import Footer from './app/Footer';
 
 // 函数返回JSX片段，这就是functional component
-const App = () => (
-    <div className="main">
-        <div className="container">
-            <Header />
-            <Page />
-            <Footer />
-        </div>
-    </div>
-);
+const App = () => {
+	const page = 'SERVICES';
+
+	return (
+		<div className="main">
+			<div className="container">
+				<Header page={page} />
+				<Page page={page} />
+				<Footer />
+			</div>
+		</div>
+	)
+};
 
 export default App;
