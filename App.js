@@ -5,8 +5,8 @@ import Footer from './app/Footer';
 
 // 函数返回JSX片段，这就是functional component
 const App = () => (
-    <div class="main">
-        <div class="container">
+    <div className="main">
+        <div className="container">
             <Header />
             <Page />
             <Footer />
